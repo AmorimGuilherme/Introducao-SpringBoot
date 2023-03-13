@@ -1,10 +1,10 @@
 package br.com.guilh.helloworld.model.entities;
 
-public class ObjetivosPessoais {
+public class ObjetivoPessoal {
 
 	private String descricao;
 
-	public ObjetivosPessoais(String descricao) {
+	public ObjetivoPessoal(String descricao) {
 		this.descricao = descricao;
 	}
 

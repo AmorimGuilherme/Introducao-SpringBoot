@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.guilh.helloworld.model.entities.BSM;
-import br.com.guilh.helloworld.model.entities.ObjetivosPessoais;
+import br.com.guilh.helloworld.model.entities.ObjetivoPessoal;
 
 @RestController
 @RequestMapping("/hello-world")
@@ -44,12 +44,12 @@ public class HelloWorldController {
 	}
 
 	@GetMapping("/lista-objetivos-pessoais")
-	public List<ObjetivosPessoais> listaObjetivosPessoais(){
-		ObjetivosPessoais ob1 = new ObjetivosPessoais("Entender o conteito de REST");
-		ObjetivosPessoais ob2 = new ObjetivosPessoais("Dominar CRUD basico");
-		ObjetivosPessoais ob3 = new ObjetivosPessoais("Dominar todo o conceito dos metodos HTTP");
+	public List<ObjetivoPessoal> listaObjetivosPessoais(){
+		ObjetivoPessoal ob1 = new ObjetivoPessoal("Entender o conteito de REST");
+		ObjetivoPessoal ob2 = new ObjetivoPessoal("Dominar CRUD basico");
+		ObjetivoPessoal ob3 = new ObjetivoPessoal("Dominar todo o conceito dos metodos HTTP");
 		
-		List<ObjetivosPessoais> objetivos = new ArrayList<>();
+		List<ObjetivoPessoal> objetivos = new ArrayList<>();
 		objetivos.add(ob1);
 		objetivos.add(ob2);
 		objetivos.add(ob3);
