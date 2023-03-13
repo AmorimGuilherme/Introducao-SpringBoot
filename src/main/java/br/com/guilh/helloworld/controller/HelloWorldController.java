@@ -19,6 +19,9 @@ public class HelloWorldController {
 		return "Hello World!!!";
 	}
 
+	
+	// localhost:8080/hello-world/lista-bsm
+	
 	@GetMapping("/lista-bsm")
 	public List<BSM> listaBSM() {
 		BSM orientacaoAoFuturo = new BSM("Orientacao ao Futuro");
